@@ -59,12 +59,12 @@
 
         adjust_layer {
             bindings = <
-&out OUT_BLE                     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_CLR       &out OUT_USB              &trans      &trans     &trans     &trans     &trans   &bt BT_CLR
-&rgb_ug RGB_TOG                  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF           &kp PG_UP   &trans     &kp UP     &trans     &kp N0   &trans
-&ext_power EXT_POWER_TOGGLE_CMD  &kp LALT         &kp LCTRL        &kp LSHFT        &trans           &kp CLCK                  &kp PG_DN   &kp LEFT   &kp DOWN   &kp RIGHT  &kp DEL  &kp BSPC
-&trans                           &kp K_UNDO       &kp K_CUT        &kp K_COPY       &kp K_PASTE      &trans                    &kp C_MUTE  &trans     &trans     &trans     &trans   &trans
-&trans                           &trans           &kp LCTRL        &kp LGUI         &kp LALT         &mo ADJ          &mo RSE  &mo LWR     &kp SPACE  &kp SPACE  &mo RSE    &mo ADJ  &mo LWR     &kp RALT
-                                                                                                                               &kp RGUI                                                          &kp RCTRL
+&out OUT_BLE                     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_CLR       &out OUT_USB              &trans      &trans     &trans     &trans       &trans   &bt BT_CLR
+&rgb_ug RGB_TOG                  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF           &kp PG_UP   &kp HOME   &kp UP     &kp END      &kp N0   &trans
+&ext_power EXT_POWER_TOGGLE_CMD  &kp LALT         &kp LCTRL        &kp LSHFT        &trans           &kp CLCK                  &kp PG_DN   &kp LEFT   &kp DOWN   &kp RIGHT    &kp DEL  &kp BSPC
+&trans                           &kp K_UNDO       &kp K_CUT        &kp K_COPY       &kp K_PASTE      &trans                    &kp C_MUTE  &trans     &trans     &kp LS(TAB)  &trans   &kp LS(LC(TAB))
+&trans                           &trans           &kp LCTRL        &kp LGUI         &kp LALT         &mo ADJ          &mo RSE  &mo LWR     &kp SPACE  &kp SPACE  &mo RSE      &mo ADJ  &mo LWR          &kp RALT
+                                                                                                                               &kp RGUI                                                                 &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
